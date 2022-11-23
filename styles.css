@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+:root{
+    --backgroundprincipal: black;
+    --colortexto: white;
+}
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1px;
+ }
+
+body{
+    background-color: black;
+}
+
+.card{
+    background-color: rgb(61, 57, 57);
+    color: white;
+
+    height: 500px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 4px rgba(233, 137, 105, 0.86);
+}
+.card .portada{
+    background: linear-gradient(0deg, rgba(16,103,230,0.75) 0%, rgba(15, 241, 181, 0.2) 70%),
+     url('../img/ANDOR.jpg') top left no-repeat;
+    background-size: cover;
+    height: 60%;
+    border-radius: 5px;
+    position: relative;
+
+}
+.portada h2{
+    text-align: center;
+    padding-top: 70%;
+    font-size: 40px;
+    font-family: 'Roboto Condensed';
+    text-shadow: 2px 2px 2px #b6061e;
+}
+.portada .serie-top{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 5;
+
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(139, 6, 6);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 69%, 0 100%);
+
+}
+
+.portada::after{
+    content: 'Disney+';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 5px;
+    background-color: rgba(109, 109, 100, 0.75);
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+}
+
+.info p{
+    padding: 10px;
+    text-align: justify;
+    line-height: 20px;
+
+}
+
+.panel-buttons{
+    text-align: center;
+}
+
+.panel-buttons button{
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 6px;
+    background-color:  rgb(139, 6, 6);
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.panel-buttons .fa-solid{
+    margin-right: 10px;
+    color: rgba(233, 137, 105, 0.86);
+    font-size: 25px;
+}
+
+.panel-buttons button:hover{
+    background-color: #b6061e;
+    transform: scale(1.1, 1.1);
+    transition: transform 0.4s ease;
+}
+
